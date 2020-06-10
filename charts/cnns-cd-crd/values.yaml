@@ -1,0 +1,33 @@
+---
+# Default values for vpn.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+registry: docker.io
+org: cnns
+tag: master
+pullPolicy: IfNotPresent
+label: cnns-nsr
+replicas: 1
+
+
+nsr:
+  type: "nsmrs" # default to in-memory NSM nsmrs registry, "CNNS" is the cnns-nsr from this repo
+  registry: docker.io # Registry from which to pull the cnns-nsr
+  org: cnns # Organisation ID for the registry
+  tag: latest # Tag for the cnns-nsr version
+  pullPolicy: IfNotPresent
+  label: cnns-nsr
+  serviceType: NodePort  # Type of service the cnns-nsr will be exposed as
+  publicPort: 31505
+
+ipam:
+  etcdAddress: example-etcd-cluster-client:2379
+  addressPool:
+    connectivityDomain: example-connectivity-domain
+    fqdn: cisco.cnns-cisco.com
+    ipFamily: IPV4
+    address: 192.168.0.0/16
+  leaseTimeout: 24
+  leaseCheckPeriod: 12
+  nodePort: 31153

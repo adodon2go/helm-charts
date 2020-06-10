@@ -1,0 +1,13 @@
+apiVersion: v1
+entries:
+  cnns-cd-crd:
+  - apiVersion: v1
+    appVersion: "0.1"
+    created: "2020-06-10T11:56:32.495730839+03:00"
+    description: Cisco CNNS
+    digest: 8b5bbc6d7ba0d460e559081b2476074f854d2006ef55ce80eed684fdac0acfa0
+    name: cnns-cd-crd
+    urls:
+    - https://github.com/adodon2go/helm-charts/packages/cnns-cd-crd-v0.0.1.tgz
+    version: v0.0.1
+generated: "2020-06-10T11:56:32.486451499+03:00"

@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: connectivity-domain-operator
+  namespace: {{.Release.Namespace}}
+spec:
+  replicas: {{.Values.replicas}}
+  selector:
+    matchLabels:
+      name: connectivity-domain-operator
+  template:
+    metadata:
+      labels:
+        name: connectivity-domain-operator
+    spec:
+      serviceAccountName: connectivity-domain-operator
+      containers:
+        - name: connectivity-domain-operator
+          # Replace this with the built image name
+          image: {{ .Values.registry }}/{{ .Values.org }}/connectivity-domain-operator:{{ .Values.tag }}
+          command:
+          - connectivity-domain-operator
+          imagePullPolicy: {{ .Values.pullPolicy }}
+          env:
+            - name: WATCH_NAMESPACE
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.namespace
+            - name: POD_NAME
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.name
+            - name: OPERATOR_NAME
+              value: "connectivity-domain-operator"
+            - name: CONFIG_PATH
+              value: "etc/connectivity-domain-configmap/config.yaml"
+          volumeMounts:
+            - mountPath: etc/connectivity-domain-configmap/config.yaml
+              subPath: config.yaml
+              name: config-data-connectivity-domain
+      volumes:
+        - name: config-data-connectivity-domain
+          configMap:
+            name: connectivity-domain-configmap
