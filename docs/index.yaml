@@ -3,21 +3,21 @@ entries:
   cnns-cd-crd:
   - apiVersion: v1
     appVersion: "0.1"
-    created: "2020-06-10T12:33:32.499337716+03:00"
+    created: "2020-06-10T20:04:38.089589497+03:00"
     description: Cisco CNNS
     digest: ee72f39fe9294dd8f51506b1ef0a864b7dfbd181b595ce3440e4f4ffceb700ff
     name: cnns-cd-crd
     urls:
     - https://adodon2go.github.io/helm-charts/cnns-cd-crd-v0.0.1.tgz
     version: v0.0.1
-  nse-discovery:
+  cnns-nse-discovery:
   - apiVersion: v1
     appVersion: "0.1"
-    created: "2020-06-10T18:19:24.31021492+03:00"
+    created: "2020-06-10T20:04:38.089784753+03:00"
     description: Cisco nse-discovery
-    digest: e9e73911b1b7f7dc10d985d774e7e28d04e94ecc6f69aff091b45d4b6d0faff8
-    name: nse-discovery
+    digest: e4a10c5d3aa7af995666a5e9e738126b8643bbb524b42246ebd87f5c3e8ff253
+    name: cnns-nse-discovery
     urls:
-    - https://adodon2go.github.io/helm-charts/nse-discovery-v0.0.1.tgz
+    - https://adodon2go.github.io/helm-charts/cnns-nse-discovery-v0.0.1.tgz
     version: v0.0.1
-generated: "2020-06-10T18:19:24.309667726+03:00"
+generated: "2020-06-10T20:04:38.08907093+03:00"
