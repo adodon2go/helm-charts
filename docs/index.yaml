@@ -1,9 +1,19 @@
 apiVersion: v1
 entries:
+  cnns-cd:
+  - apiVersion: v1
+    appVersion: "0.1"
+    created: "2020-06-10T21:12:59.357032133+03:00"
+    description: Cisco CNNS
+    digest: 928731a39bfeb99ec1ba1a60c1ce856e1dd3e6f4e86a975f7f65f7b872590a1e
+    name: cnns-cd
+    urls:
+    - https://adodon2go.github.io/helm-charts/cnns-cd-v0.0.1.tgz
+    version: v0.0.1
   cnns-cd-crd:
   - apiVersion: v1
     appVersion: "0.1"
-    created: "2020-06-10T20:36:51.965661657+03:00"
+    created: "2020-06-10T21:12:59.356817794+03:00"
     description: Cisco CNNS
     digest: ee72f39fe9294dd8f51506b1ef0a864b7dfbd181b595ce3440e4f4ffceb700ff
     name: cnns-cd-crd
@@ -13,7 +23,7 @@ entries:
   cnns-dns-publisher:
   - apiVersion: v1
     appVersion: 0.0.1
-    created: "2020-06-10T20:36:51.965807336+03:00"
+    created: "2020-06-10T21:12:59.35791106+03:00"
     description: A Helm chart for Kubernetes deployment of app-dns-publisher
     digest: 6049414df9a8b303d3cc2412a84c400d367312672f33042f33beb45a2f3f67a3
     name: cnns-dns-publisher
@@ -23,11 +33,11 @@ entries:
   cnns-nse-discovery:
   - apiVersion: v1
     appVersion: "0.1"
-    created: "2020-06-10T20:36:51.966335116+03:00"
+    created: "2020-06-10T21:12:59.358704052+03:00"
     description: Cisco nse-discovery
     digest: e4a10c5d3aa7af995666a5e9e738126b8643bbb524b42246ebd87f5c3e8ff253
     name: cnns-nse-discovery
     urls:
     - https://adodon2go.github.io/helm-charts/cnns-nse-discovery-v0.0.1.tgz
     version: v0.0.1
-generated: "2020-06-10T20:36:51.963690337+03:00"
+generated: "2020-06-10T21:12:59.347080986+03:00"
