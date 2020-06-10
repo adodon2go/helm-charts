@@ -1,0 +1,13 @@
+# Default values for app-dns-publisher
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+registry: docker.io
+org: cnns
+tag: latest
+pullPolicy: Always
+
+# Set this value to the namespace to watch for NSM client apps or leave empty to watch all namespaces
+watchNamespace: ""
+
+#global:
