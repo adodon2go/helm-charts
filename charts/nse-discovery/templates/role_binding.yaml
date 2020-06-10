@@ -1,0 +1,12 @@
+kind: ClusterRoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: nse-discovery-sa
+subjects:
+- kind: ServiceAccount
+  name: nse-discovery-sa
+  namespace: "nsm-system"
+roleRef:
+  kind: ClusterRole
+  name: nse-discovery-sa
+  apiGroup: rbac.authorization.k8s.io

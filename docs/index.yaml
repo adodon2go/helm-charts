@@ -10,4 +10,14 @@ entries:
     urls:
     - https://adodon2go.github.io/helm-charts/cnns-cd-crd-v0.0.1.tgz
     version: v0.0.1
-generated: "2020-06-10T12:33:32.498989302+03:00"
+  nse-discovery:
+  - apiVersion: v1
+    appVersion: "0.1"
+    created: "2020-06-10T18:19:24.31021492+03:00"
+    description: Cisco nse-discovery
+    digest: e9e73911b1b7f7dc10d985d774e7e28d04e94ecc6f69aff091b45d4b6d0faff8
+    name: nse-discovery
+    urls:
+    - https://adodon2go.github.io/helm-charts/nse-discovery-v0.0.1.tgz
+    version: v0.0.1
+generated: "2020-06-10T18:19:24.309667726+03:00"
