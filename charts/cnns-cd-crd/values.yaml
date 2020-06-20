@@ -1,5 +1,5 @@
 ---
-# Default values for vpn.
+# Default values for ipam and nsr.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
@@ -14,7 +14,7 @@ replicas: 1
 nsr:
   type: "nsmrs" # default to in-memory NSM nsmrs registry, "CNNS" is the cnns-nsr from this repo
   registry: docker.io # Registry from which to pull the cnns-nsr
-  org: cnns # Organisation ID for the registry
+  org: cnns # Organization ID for the registry
   tag: latest # Tag for the cnns-nsr version
   pullPolicy: IfNotPresent
   label: cnns-nsr
